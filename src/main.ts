@@ -88,6 +88,7 @@ console.log('SELECTING');
 result = await sql`SELECT * FROM foo`;
 printBytesResult(result);
 
+console.log('QUOTE SELECTING');
 result = await sql`SELECT quote(a) FROM foo`;
 printHexResult(result);
 
